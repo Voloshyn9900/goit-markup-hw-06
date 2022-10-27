@@ -59,53 +59,69 @@
                             </svg>
                         </button>
                         <p class="modal-title">Залиште свої дані, ми вам передзвонимо</p>
-                        <form>
+                        <form class="modal-form">
                             <ul class="modal-list">
                                 <li class="modal-item">
                                     <label class="modal-lable" for="name">Ім'я</label>
-                                    <input class="modal-input"
-                                    type="text"
-                                    name="name"
-                                    id="name"
-                                    placeholder=" "/>
-
-
+                                    <div>
+                                        <input class="modal-input"
+                                        type="text"
+                                        id="name"
+                                        name="name"
+                                        placeholder="Voloshyn Yurii"/>
+                                        <svg class="modal-svg" width="18" height="18">
+                                            <use href="./img/img_svg/symbol-modal.svg#icon-modal-person"></use>
+                                        </svg>
+                                    </div>
                                 </li>
                                 <li class="modal-item">
                                     <label class="modal-lable" for="tel">Телефон</label>
-                                    <input class="modal-input" 
-                                    type="tel" 
-                                    name="tel" 
-                                    id="tel"
-                                    placeholder=" "/>
-
+                                    <div>
+                                        <input class="modal-input" 
+                                        type="tel"
+                                        id="tel"
+                                        name="tel"
+                                        placeholder="+38 093 195 99 00"/>
+                                        <svg class="modal-svg" width="18" height="18">
+                                            <use href="./img/img_svg/symbol-modal.svg#icon-modal-phone"></use>
+                                        </svg>
+                                    </div>
                                 </li>
                                 <li class="modal-item">
                                     <label class="modal-lable" for="email">Пошта</label>
-                                    <input class="modal-input" 
-                                    type="email" 
-                                    name="email" 
-                                    id="email" 
-                                    placeholder=" "/>
-
-
+                                    <div>
+                                        <input class="modal-input" 
+                                        type="email"
+                                        id="email"
+                                        name="email"
+                                        placeholder="voloshyn9900@gmail.com"/>
+                                        <svg class="modal-svg" width="18" height="18">
+                                            <use href="./img/img_svg/symbol-modal.svg#icon-modal-email"></use>
+                                        </svg>
+                                    </div>
                                 </li>
-                                <li class="modal-item">
-                                    <label class="modal-lable" for="textarea">Пошта</label>
-                                    <textarea class="modal-input textarea" 
-                                    name="textarea" 
-                                    id="textarea" 
-                                    rows="10" 
-                                    placeholder="">
-                                    </textarea>
-                                
+                                <li class="modal-item textarea">
+                                    <label class="modal-lable" for="textarea">Коментар</label>
+                                    <textarea class="modal-input textarea"
+                                    name="textarea"
+                                    id="textarea"
+                                    rows="textarea"
+                                    placeholder="Введіть текст"></textarea>
                                 </li>
                             </ul>
-
-
-
-
-
+                            <div class="checkbox-div">
+                                <label class="modal-lable">
+                                    <input 
+                                    class="modal-checkbox"
+                                    type="checkbox"
+                                    name="checkbox"/>
+                                    <span class="checkbox-off"></span>
+                                    <span class="checkbox-text">Погоджуюся з розсилкою та приймаю 
+                                        <span><a href="./index.html" class="confirm">Умови договору</a></span>
+                                    </span>
+                                </label>
+                            </div>
+                            <button class="send-button" type="submit">Відправити</button>
                         </form>
                     </div>
                 </div>
@@ -436,11 +452,12 @@
                     type="email" 
                     name="mail" 
                     id="mailing" 
-                    placeholder="my@gmail.com">
-                    <button class="mailing-button" type="submit">Підписатися</button>
-                
-                
-                
+                    placeholder="voloshyn9900@gmail.com">
+                    <button class="mailing-button" type="submit">Підписатися
+                        <svg class="send-svg-button" width="24" height="24">
+                            <use href="./img/img_svg/mailing-send.svg"></use>
+                        </svg>
+                    </button> 
                 </form>
             </div> 
         </div>
